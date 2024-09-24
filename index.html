@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Task Manager</h1>
+
+        <!-- Форма добавления задачи -->
+        <form id="taskForm">
+            <input type="text" id="taskInput" placeholder="Enter a new task title" required>
+            <textarea id="taskDescription" placeholder="Enter a description" rows="3"></textarea>
+            <button type="submit">Add Task</button>
+        </form>
+
+        <!-- Таблица для отображения задач -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Status</th>
+                    <th>Create Date</th>
+                    <th>Update Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="taskTableBody">
+                <!-- Здесь будут отображаться задачи -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

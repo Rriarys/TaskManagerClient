@@ -1,0 +1,102 @@
+/* Стилизация для всей страницы */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Основной контейнер для формы и таблицы */
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Заголовок */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Форматирование формы */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+/* Поле для ввода названия задачи */
+input {
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    width: 100%;
+}
+
+/* Поле для описания задачи, ниже названия, чуть шире */
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    margin-bottom: 10px;
+    flex-grow: 1;
+    resize: none;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+/* Кнопка добавления задачи */
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+}
+
+/* Стилизация таблицы */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+/* Стилизация ячеек таблицы */
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Стилизация заголовков таблицы */
+th {
+    background-color: #f4f4f4;
+}
+
+/* Кнопки действий */
+.actions button {
+    margin-right: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+/* Кнопка редактирования */
+.actions .edit {
+    background-color: #ffc107;
+    color: white;
+}
+
+/* Кнопка удаления */
+.actions .delete {
+    background-color: #dc3545;
+    color: white;
+}
